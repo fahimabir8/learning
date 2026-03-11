@@ -16,5 +16,18 @@ func main() {
 		fmt.Printf("%v\n", man.Name)
 	}
 
+	myCar := car {
+		brand: "toyota",
+		model: "GXR",
+	}
+
+	fmt.Println(myCar.brand, myCar.model)
 	
+
+	r := rect {
+		width: 30.1,
+		height: 49.2,
+	}
+	printShapeData(r)
+
 }
