@@ -1,9 +1,9 @@
 package main
 
-import (
-	// "fmt"
-	// "log"
-)
+import "fmt"
+
+// "fmt"
+// "log"
 
 
 func main() {
@@ -33,6 +33,9 @@ func main() {
 	// ans := verisium(3,2)
 	// fmt.Print(ans)
 
-	marwin(10,4)
+	// marwin(10,4)
+
+	arr := []int {3,6,2,2}
+	fmt.Print(cap(arr))
 }
 
