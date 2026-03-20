@@ -35,8 +35,15 @@ func main() {
 
 	// marwin(10,4)
 
-	arr := []int {3,6,2,2}
-	// fmt.Print(cap(arr))
-	fmt.Print(take(arr...))
+	// arr := []int {3,6,2,2}
+	// // fmt.Print(cap(arr))
+	// fmt.Print(take(arr...))
+
+	f1 := make(map[string] string) 
+	f1["ferrari"] = "charles"
+	f1["aston martin"] = "alonso"
+	f1["redbull"] = "max"
+
+	fmt.Print(f1)
 }
 
