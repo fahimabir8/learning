@@ -1,0 +1,166 @@
+Command: /home/abir/.espressif/tools/python/v6.1/venv/bin/python /home/abir/.espressif/v6.1/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace /home/abir/coding/esp/kconfig_demo/build/app.elf /home/abir/coding/esp/kconfig_demo/build/bootloader/bootloader.elf -m '/home/abir/.espressif/tools/python/v6.1/venv/bin/python' '/home/abir/.espressif/v6.1/esp-idf/tools/idf.py' '-p' '/dev/ttyACM0'
+[0;32mI (102) esp_image: segment 3: paddr=00020020 vaddr=42000020 sizeions:[0m
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c0d4
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5830,len:0x155c
+load:0x403cbf10,len:0xd10
+load:0x403ce710,len:0x2fdc
+entry 0x403cbf1a
+[0;32mI (24) boot: ESP-IDF v6.1 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Oct 19 2026 10:19:41[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (25) boot: efuse block revision: v1.3[0m
+[0;32mI (28) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (35) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (39) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (46) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (59) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (75) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=082d4h ( 33492) map[0m
+[0;32mI (88) esp_image: segment 1: paddr=000182fc vaddr=3fc89c00 size=019f0h (  6640) load[0m
+[0;32mI (91) esp_image: segment 2: paddr=00019cf4 vaddr=40380000 size=06324h ( 25380) load[0m
+[0;32mI (102) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=11208h ( 70152) map[0m
+[0;32mI (117) esp_image: segment 4: paddr=00031230 vaddr=40386324 size=03734h ( 14132) load[0m
+[0;32mI (120) esp_image: segment 5: paddr=0003496c vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (124) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (126) boot: Disabling RNG early entropy source...[0m
+[0;32mI (142) cpu_start: Unicore app[0m
+D (142) cpu_start: Pro cpu up
+D (150) clk: RTC_SLOW_CLK calibration value: 3714150
+[0;32mI (154) cpu_start: GPIO 20 and 21 are used as console UART I/O pins[0m
+D (155) cpu_start: calling init function: 0x42000728 on core: 0
+D (155) cpu_start: calling init function: 0x42001346 on core: 0
+[0;32mI (160) cpu_start: Pro cpu start user code[0m
+[0;32mI (164) cpu_start: cpu freq: 160000000 Hz[0m
+D (168) cpu_start: calling init function: 0x420005d2 on core: 0
+[0;32mI (174) app_init: Application information:[0m
+[0;32mI (178) app_init: Project name:     app[0m
+[0;32mI (181) app_init: App version:      1[0m
+[0;32mI (184) app_init: Compile time:     Oct 19 2026 10:40:44[0m
+[0;32mI (189) app_init: ELF file SHA256:  6076e06bb...[0m
+[0;32mI (194) app_init: ESP-IDF:          v6.1[0m
+D (197) cpu_start: calling init function: 0x4200073a on core: 0
+[0;32mI (203) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (207) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (211) efuse_init: Chip rev:         v0.4[0m
+D (215) cpu_start: calling init function: 0x42002e92 on core: 0
+D (220) memory_layout: Checking 5 reserved memory ranges:
+D (226) memory_layout: Reserved memory range 0x3fc80000 - 0x3fc89c00
+D (232) memory_layout: Reserved memory range 0x3fc89c00 - 0x3fc8c620
+D (238) memory_layout: Reserved memory range 0x3fcdf060 - 0x3fce0000
+D (244) memory_layout: Reserved memory range 0x50000000 - 0x50000024
+D (250) memory_layout: Reserved memory range 0x50001fe8 - 0x50002000
+D (256) memory_layout: Building list of available memory regions:
+D (262) memory_layout: Available memory region 0x3fc8c620 - 0x3fca0000
+D (268) memory_layout: Available memory region 0x3fca0000 - 0x3fcc0000
+D (274) memory_layout: Available memory region 0x3fcc0000 - 0x3fcdc710
+D (280) memory_layout: Available memory region 0x3fcdc710 - 0x3fcdf060
+D (287) memory_layout: Available memory region 0x50000024 - 0x50001fe8
+[0;32mI (293) heap_init: Initializing. RAM available for dynamic allocation:[0m
+D (299) heap_init: New heap initialised at 0x3fc8c620
+[0;32mI (304) heap_init: At 3FC8C620 len 000339E0 (206 KiB): RAM[0m
+D (309) heap_init: New heap initialised at 0x3fcc0000
+[0;32mI (314) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (320) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+D (326) heap_init: New heap initialised at 0x50000024
+[0;32mI (331) heap_init: At 50000024 len 00001FC4 (7 KiB): RTCRAM[0m
+D (336) cpu_start: calling init function: 0x42006cdc on core: 0
+D (342) cpu_start: calling init function: 0x42005fa6 on core: 0
+D (347) cpu_start: calling init function: 0x420013be on core: 0
+D (353) intr_alloc: Connected src 27 to int 2 (cpu 0)
+D (358) cpu_start: calling init function: 0x42005fce on core: 0
+D (363) cpu_start: calling init function: 0x420079d8 on core: 0
+D (369) cpu_start: calling init function: 0x42008334 on core: 0
+D (375) cpu_start: calling init function: 0x42009002 on core: 0
+D (380) cpu_start: calling init function: 0x42000504 on core: 0
+D (386) cpu_start: calling init function: 0x42005fb6 on core: 0
+D (392) cpu_start: calling init function: 0x42000af2 on core: 0
+D (397) spi_flash: trying chip: issi
+D (401) spi_flash: trying chip: gd
+D (404) spi_flash: trying chip: mxic
+D (407) spi_flash: trying chip: winbond
+D (411) spi_flash: trying chip: boya
+D (414) spi_flash: trying chip: th
+D (417) spi_flash: trying chip: generic
+[0;32mI (421) spi_flash: detected chip: generic[0m
+[0;32mI (424) spi_flash: flash io: dio[0m
+[0;33mW (427) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+D (439) cpu_start: calling init function: 0x42000820 on core: 0
+D (445) cpu_start: calling init function: 0x4200253c on core: 0
+D (451) cpu_start: calling init function: 0x4200090c on core: 0
+D (456) cpu_start: calling init function: 0x4200be76 on core: 0
+D (462) cpu_start: calling init function: 0x4200425a on core: 0
+[0;32mI (468) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (474) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+D (480) cpu_start: calling init function: 0x420013e0 on core: 0
+D (486) cpu_start: calling init function: 0x42007af0 on core: 0
+D (492) cpu_start: calling init function: 0x420013f0 on core: 0
+D (497) intr_alloc: Connected src 50 to int 3 (cpu 0)
+D (502) app_start: Starting scheduler on CPU0
+D (506) intr_alloc: Connected src 37 to int 4 (cpu 0)
+[0;32mI (506) main_task: Started on CPU0[0m
+D (506) heap_init: New heap initialised at 0x3fcdc710
+D (506) intr_alloc: Connected src 33 to int 5 (cpu 0)
+[0;32mI (516) main_task: Calling app_main()[0m
+hello world 
+log messages: 
+[1;31mE (516) kconfig_demo: Error[0m
+[0;33mW (526) kconfig_demo: Warning[0m
+[0;32mI (526) kconfig_demo: Info[0m
+D (526) kconfig_demo: Debug
+hello world 
+log messages: 
+[1;31mE (1526) kconfig_demo: Error[0m
+[0;33mW (1526) kconfig_demo: Warning[0m
+[0;32mI (1526) kconfig_demo: Info[0m
+D (1526) kconfig_demo: Debug
+hello world 
+log messages: 
+[1;31mE (2526) kconfig_demo: Error[0m
+[0;33mW (2526) kconfig_demo: Warning[0m
+[0;32mI (2526) kconfig_demo: Info[0m
+D (2526) kconfig_demo: Debug
+hello world 
+log messages: 
+[1;31mE (3526) kconfig_demo: Error[0m
+[0;33mW (3526) kconfig_demo: Warning[0m
+[0;32mI (3526) kconfig_demo: Info[0m
+D (3526) kconfig_demo: Debug
+hello world 
+log messages: 
+[1;31mE (4526) kconfig_demo: Error[0m
+[0;33mW (4526) kconfig_demo: Warning[0m
+[0;32mI (4526) kconfig_demo: Info[0m
+D (4526) kconfig_demo: Debug
+hello world 
+log messages: 
+[1;31mE (5526) kconfig_demo: Error[0m
+[0;33mW (5526) kconfig_demo: Warning[0m
+[0;32mI (5526) kconfig_demo: Info[0m
+D (5526) kconfig_demo: Debug
+hello world 
+log messages: 
+[1;31mE (6526) kconfig_demo: Error[0m
+[0;33mW (6526) kconfig_demo: Warning[0m
+[0;32mI (6526) kconfig_demo: Info[0m
+D (6526) kconfig_demo: Debug
+hello world 
+log messages: 
+[1;31mE (7526) kconfig_demo: Error[0m
+[0;33mW (7526) kconfig_demo: Warning[0m
+[0;32mI (7526) kconfig_demo: Info[0m
+D (7526) kconfig_demo: Debug
+hello world 
+log messages: 
+[1;31mE (8526) kconfig_demo: Error[0m
+[0;33mW (8526) kconfig_demo: Warning[0m
+[0;32mI (8526) kconfig_demo: Info[0m
+D (8526) kconfig_demo: Debug

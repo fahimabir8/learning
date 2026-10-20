@@ -1,0 +1,2 @@
+Command: /home/abir/.espressif/tools/python/v6.1/venv/bin/python /home/abir/.espressif/v6.1/esp-idf/tools/idf_monitor.py -p flash -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace /home/abir/coding/esp/lighter/build/lighter.elf /home/abir/coding/esp/lighter/build/bootloader/bootloader.elf -m '/home/abir/.espressif/tools/python/v6.1/venv/bin/python' '/home/abir/.espressif/v6.1/esp-idf/tools/idf.py' '-p'
+[Errno 2] could not open port flash: [Errno 2] No such file or directory: 'flash'

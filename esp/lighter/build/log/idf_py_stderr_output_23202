@@ -1,0 +1,8 @@
+Command: /home/abir/.espressif/tools/python/v6.1/venv/bin/python /home/abir/.espressif/v6.1/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace /home/abir/coding/esp/lighter/build/lighter.elf /home/abir/coding/esp/lighter/build/bootloader/bootloader.elf -m '/home/abir/.espressif/tools/python/v6.1/venv/bin/python' '/home/abir/.espressif/v6.1/esp-idf/tools/idf.py' '-p' '/dev/ttyACM0'
+--- esp-idf-monitor 1.10.0 on /dev/ttyACM0 115200
+--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H
+--- 0x42009cae: gpio_output_disable at /home/abir/.espressif/v6.1/esp-idf/components/esp_driver_gpio/src/gpio.c:219
+--- 0x403cbf10: esp_bootloader_get_description at /home/abir/.espressif/v6.1/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c:40
+--- 0x403ce710: is_xmc_chip_strict at /home/abir/.espressif/v6.1/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c:911
+--- 0x403cbf1a: call_start_cpu0 at /home/abir/.espressif/v6.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c:27
+

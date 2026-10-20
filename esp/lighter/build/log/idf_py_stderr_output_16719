@@ -1,0 +1,1 @@
+Command: /home/abir/.espressif/tools/python/v6.1/venv/bin/python -m esptool -p /dev/ttyACM0 -b 460800 --before default-reset --after hard-reset --chip esp32c3 erase-flash

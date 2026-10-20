@@ -1,0 +1,29 @@
+Command: ninja all
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /home/abir/coding/esp/lighter/build/bootloader && /home/abir/.espressif/tools/python/v6.1/venv/bin/python /home/abir/.espressif/v6.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/abir/coding/esp/lighter/build/bootloader/bootloader.bin
+Bootloader binary size 0x52a0 bytes. 0x2d60 bytes (35%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/lighter.c.obj
+[5/10] Linking C static library esp-idf/main/libmain.a
+[6/10] Generating esp-idf/esp_system/ld/sections.ld
+NOTE: 
+/home/abir/.espressif/v6.1/esp-idf/components/bt/host/nimble/Kconfig.in:1428: 
+BT_NIMBLE_MESH_PROVISIONER: 'default 0' is not a valid bool value (only 'y' and 
+'n' are allowed). Value is treated as 'n'.
+NOTE: /home/abir/.espressif/v6.1/esp-idf/components/fatfs/Kconfig:240: 
+FATFS_PRINT_LLI: 'default 0' is not a valid bool value (only 'y' and 'n' are 
+allowed). Value is treated as 'n'.
+NOTE: /home/abir/.espressif/v6.1/esp-idf/components/fatfs/Kconfig:245: 
+FATFS_PRINT_FLOAT: 'default 0' is not a valid bool value (only 'y' and 'n' are 
+allowed). Value is treated as 'n'.
+[7/10] Building C object CMakeFiles/lighter.elf.dir/project_elf_src_esp32c3.c.obj
+[8/10] Linking CXX executable lighter.elf
+[9/10] Generating binary image from built executable
+esptool v5.3.1
+Creating ESP32-C3 image...
+Merged 3 ELF sections.
+Successfully created ESP32-C3 image.
+Generated /home/abir/coding/esp/lighter/build/lighter.bin
+[10/10] cd /home/abir/coding/esp/lighter/build && /home/abir/.espressif/tools/python/v6.1/venv/bin/python /home/abir/.espressif/v6.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/abir/coding/esp/lighter/build/partition_table/partition-table.bin /home/abir/coding/esp/lighter/build/lighter.bin
+lighter.bin binary size 0x24aa0 bytes. Smallest app partition is 0x100000 bytes. 0xdb560 bytes (86%) free.

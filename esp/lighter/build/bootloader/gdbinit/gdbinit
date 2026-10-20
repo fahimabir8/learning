@@ -1,0 +1,2 @@
+source /home/abir/coding/esp/lighter/build/bootloader/gdbinit/symbols
+source /home/abir/coding/esp/lighter/build/bootloader/gdbinit/connect

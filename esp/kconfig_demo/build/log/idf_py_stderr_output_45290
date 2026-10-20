@@ -1,0 +1,31 @@
+Command: /home/abir/.espressif/tools/python/v6.1/venv/bin/python /home/abir/.espressif/v6.1/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace /home/abir/coding/esp/kconfig_demo/build/app.elf /home/abir/coding/esp/kconfig_demo/build/bootloader/bootloader.elf -m '/home/abir/.espressif/tools/python/v6.1/venv/bin/python' '/home/abir/.espressif/v6.1/esp-idf/tools/idf.py' '-p' '/dev/ttyACM0'
+--- esp-idf-monitor 1.10.0 on /dev/ttyACM0 115200
+--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H
+--- 0x4004c0d4: uart_tx_one_char_uart.part.0 in ROM
+--- 0x403cbf10: esp_bootloader_get_description at /home/abir/.espressif/v6.1/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c:40
+--- 0x403ce710: is_xmc_chip_strict at /home/abir/.espressif/v6.1/esp-idf/components/bootloader_support/bootloader_flash/src/bootloader_flash.c:911
+--- 0x403cbf1a: call_start_cpu0 at /home/abir/.espressif/v6.1/esp-idf/components/bootloader/subproject/main/bootloader_start.c:27
+--- 0x42000728: __esp_sys_init_fn_init_efuse_check at /home/abir/.espressif/v6.1/esp-idf/components/efuse/src/esp_efuse_startup.c:37
+--- 0x42001346: __esp_sys_init_fn_init_show_cpu_freq at /home/abir/.espressif/v6.1/esp-idf/components/esp_system/startup_funcs.c:54
+--- 0x420005d2: __esp_sys_init_fn_init_show_app_info at /home/abir/.espressif/v6.1/esp-idf/components/esp_app_format/esp_app_desc.c:126
+--- 0x4200073a: __esp_sys_init_fn_init_efuse_show_app_info at /home/abir/.espressif/v6.1/esp-idf/components/efuse/src/esp_efuse_startup.c:47
+--- 0x42002e92: __esp_sys_init_fn_init_heap at /home/abir/.espressif/v6.1/esp-idf/components/heap/heap_caps_init.c:29
+--- 0x42006cdc: __esp_sys_init_fn_esp_timer_init_nonos at /home/abir/.espressif/v6.1/esp-idf/components/esp_timer/src/esp_timer_init.c:28
+--- 0x42005fa6: __esp_sys_init_fn_init_libc at /home/abir/.espressif/v6.1/esp-idf/components/esp_libc/src/init.c:12
+--- 0x420013be: __esp_sys_init_fn_init_brownout at /home/abir/.espressif/v6.1/esp-idf/components/esp_system/startup_funcs.c:69
+--- 0x42005fce: __esp_sys_init_fn_init_libc_time at /home/abir/.espressif/v6.1/esp-idf/components/esp_libc/src/init.c:28
+--- 0x420079d8: __esp_sys_init_fn_init_vfs_uart at /home/abir/.espressif/v6.1/esp-idf/components/esp_driver_uart/src/uart_vfs.c:1228
+--- 0x42008334: __esp_sys_init_fn_init_vfs_usj_sec at /home/abir/.espressif/v6.1/esp-idf/components/esp_driver_usb_serial_jtag/src/usb_serial_jtag_vfs.c:718
+--- 0x42009002: __esp_sys_init_fn_init_vfs_nullfs at /home/abir/.espressif/v6.1/esp-idf/components/vfs/nullfs.c:322
+--- 0x42000504: __esp_sys_init_fn_init_vfs_console at /home/abir/.espressif/v6.1/esp-idf/components/esp_stdio/stdio_vfs.c:438
+--- 0x42005fb6: __esp_sys_init_fn_init_libc_stdio at /home/abir/.espressif/v6.1/esp-idf/components/esp_libc/src/init.c:18
+--- 0x42000af2: __esp_sys_init_fn_init_flash at /home/abir/.espressif/v6.1/esp-idf/components/spi_flash/esp_flash_spi_init.c:643
+--- 0x42000820: __esp_sys_init_fn_init_efuse at /home/abir/.espressif/v6.1/esp-idf/components/efuse/src/esp_efuse_startup.c:158
+--- 0x4200253c: __esp_sys_init_fn_esp_hw_debug_assist_init at /home/abir/.espressif/v6.1/esp-idf/components/esp_system/debug_assist.c:54
+--- 0x4200090c: __esp_sys_init_fn_esp_security_init at /home/abir/.espressif/v6.1/esp-idf/components/esp_security/src/init.c:137
+--- 0x4200be76: __esp_sys_init_fn_mbedtls_psa_crypto_init_fn at /home/abir/.espressif/v6.1/esp-idf/components/mbedtls/port/esp_psa_crypto_init.c:23
+--- 0x4200425a: __esp_sys_init_fn_esp_sleep_startup_init at /home/abir/.espressif/v6.1/esp-idf/components/esp_hw_support/sleep_gpio.c:392
+--- 0x420013e0: __esp_sys_init_fn_init_apb_dma at /home/abir/.espressif/v6.1/esp-idf/components/esp_system/startup_funcs.c:114
+--- 0x42007af0: __esp_sys_init_fn_usb_serial_jtag_conn_status_init at /home/abir/.espressif/v6.1/esp-idf/components/esp_driver_usb_serial_jtag/src/usb_serial_jtag_connection_monitor.c:76
+--- 0x420013f0: __esp_sys_init_fn_init_disable_rtc_wdt at /home/abir/.espressif/v6.1/esp-idf/components/esp_system/startup_funcs.c:134
+
