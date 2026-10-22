@@ -1,0 +1,6 @@
+# ESP-IDF build output
+esp/*/build/
+
+# ESP-IDF generated SDK configuration (may contain WiFi credentials)
+esp/*/sdkconfig
+esp/*/sdkconfig.old
